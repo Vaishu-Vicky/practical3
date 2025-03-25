@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio-Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #008080;
+        }
+        .bio {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #008080;
+            object-fit: cover;
+        }
+        .details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #008080;
+            color: white;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bio-Data</h1>
+
+        <div class="bio">
+            
+            <div class="details">
+                <p><strong>Name:</strong> Princy</p>
+                <p><strong>Date of Birth:</strong> January 1, 1995</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+            </div>
+        </div>
+
+        <h2>Education Details</h2>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Science</td>
+                <td>ABC University</td>
+                <td>2018</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary</td>
+                <td>XYZ School</td>
+                <td>2014</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>XYZ School</td>
+                <td>2012</td>
+                <td>92%</td>
+            </tr>
+        </table>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Python & Java Programming</li>
+            <li>Database Management</li>
+            <li>Graphic Designing</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <p><strong>Company:</strong> Tech Solutions</p>
+        <p><strong>Role:</strong> Software Developer</p>
+        <p><strong>Duration:</strong> 2020 - Present</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+            <li>Developing web applications</li>
+            <li>Handling backend databases</li>
+            <li>Managing UI/UX designs</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123, Main Street, City, Country</p>
+
+        <div class="buttons">
+            <button class="btn" onclick="printBio()">Print Bio-Data</button>
+        </div>
+    </div>
+
+    <script>
+        function printBio() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
